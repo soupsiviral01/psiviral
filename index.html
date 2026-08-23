@@ -180,14 +180,19 @@
       <div class="pv-shell">
         <div class="pv-hero-grid">
           <div class="pv-hero-copy">
-            <span class="pv-kicker">Lançamento para psicólogas</span>
             <h1>Você já entendeu o <span class="pv-blue">método.</span><br>Agora falta transformar tudo isso em <span class="pv-blue">rotina, execução e resultado.</span></h1>
             <p class="pv-lead">Depois de 3 encontros gratuitos, chegou a hora do próximo passo: entrar no Grupo das Super Interessadas e receber acesso antecipado à abertura da comunidade Psi Viral.</p>
           </div>
 
           <div class="pv-hero-media">
             <div class="pv-video" aria-label="Vídeo do pitch de vendas">
-              <iframe width="560" height="315" src="https://www.youtube.com/embed/gFFzCE0N69U?autoplay=1&mute=1&playsinline=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              <button class="pv-video-btn" type="button" data-psi-video data-video-id="gFFzCE0N69U" aria-label="Assistir video Psi Viral">
+                <span class="pv-video-center">
+                  <span class="pv-play"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg></span>
+                  <span class="pv-video-title">Assistir video</span>
+                  <span class="pv-video-sub">Toque para ligar o som</span>
+                </span>
+              </button>
             </div>
             <div class="pv-video-cta">
               <ul class="pv-checks" aria-label="Benefícios principais antes do cadastro">
@@ -203,7 +208,7 @@
         </div>
 
         <div class="pv-banner">
-          <img src="BANNER 1 - 3 personagens v2.png" width="2048" height="768" alt="Rian Lucas, Rene Cardoso e Renier: estratégia, conteúdo e crescimento digital para psicólogas" decoding="async">
+          <img src="banner-v2-novo.png?v=2" width="2048" height="768" alt="Renier Cardoso, Renê Cardoso e Rian Lucas: estratégia, conteúdo e crescimento digital para psicólogas" decoding="async">
         </div>
       </div>
     </section>
@@ -357,5 +362,28 @@
   </main>
 
 </div>
+<script>
+(function(){
+  function loadPsiVideo(button){
+    var videoId = button.getAttribute('data-video-id');
+    if (!videoId || button.getAttribute('data-loaded') === 'true') return;
+    button.setAttribute('data-loaded', 'true');
+
+    var iframe = document.createElement('iframe');
+    iframe.width = '560';
+    iframe.height = '315';
+    iframe.src = 'https://www.youtube-nocookie.com/embed/' + encodeURIComponent(videoId) + '?autoplay=1&playsinline=1&rel=0';
+    iframe.title = 'YouTube video player';
+    iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';
+    iframe.referrerPolicy = 'strict-origin-when-cross-origin';
+    iframe.allowFullscreen = true;
+    button.replaceWith(iframe);
+  }
+
+  document.querySelectorAll('[data-psi-video]').forEach(function(button){
+    button.addEventListener('click', function(){ loadPsiVideo(button); });
+  });
+})();
+</script>
 </body>
 </html>
