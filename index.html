@@ -1,0 +1,361 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#075fe4">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta name="description" content="Psi Viral: estratégia, conteúdo e crescimento digital para psicólogas. Entre no Grupo das Super Interessadas e receba acesso antecipado à abertura da comunidade.">
+  <title>Psi Viral | Grupo das Super Interessadas</title>
+  <style>
+    .psi-viral-page,
+    .psi-viral-page *{box-sizing:border-box}
+    .psi-viral-page{--blue:#075fe4;--blue-2:#0a7cff;--navy:#07152f;--ink:#0b1833;--muted:#556176;--line:#dfe7f2;--soft:#f6f9fd;--amber:#f4a62a;--green:#137c4b;--red:#d93d3d;--shadow:0 18px 42px rgba(9,35,77,.1);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;color:var(--ink);background:#fff;line-height:1.55;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+    .psi-viral-page a{text-decoration:none;color:inherit}
+    .psi-viral-page img{display:block;max-width:100%;height:auto}
+    .psi-viral-page button{font:inherit}
+    .psi-viral-page h1,.psi-viral-page h2,.psi-viral-page h3,.psi-viral-page p{margin:0}
+    .psi-viral-page h1{font-size:clamp(34px,5vw,62px);line-height:1.04;font-weight:900;letter-spacing:0;color:var(--navy)}
+    .psi-viral-page h2{font-size:clamp(27px,3.6vw,42px);line-height:1.12;font-weight:900;letter-spacing:0;color:var(--navy)}
+    .psi-viral-page h3{font-size:18px;line-height:1.25;font-weight:850;color:var(--navy)}
+    .psi-viral-page .pv-shell{width:min(1120px,calc(100% - 32px));margin-inline:auto}
+    .psi-viral-page .pv-section{padding:72px 0}
+    .psi-viral-page .pv-section--soft{background:var(--soft);border-block:1px solid #e9eef6}
+    .psi-viral-page .pv-below{content-visibility:auto;contain-intrinsic-size:720px}
+    .psi-viral-page .pv-blue{color:var(--blue)}
+    .psi-viral-page .pv-kicker{display:inline-flex;align-items:center;width:max-content;max-width:100%;border:1px solid #b8d3ff;background:#f8fbff;color:var(--blue);border-radius:999px;padding:7px 12px;font-size:12px;font-weight:850;text-transform:uppercase}
+    .psi-viral-page .pv-lead{max-width:650px;color:#31405a;font-size:clamp(17px,2vw,20px)}
+    .psi-viral-page .pv-sub{max-width:760px;margin:14px auto 0;color:var(--muted);font-size:17px;text-align:center}
+    .psi-viral-page .pv-btn{display:inline-flex;align-items:center;justify-content:center;min-height:54px;padding:15px 22px;border-radius:8px;background:linear-gradient(135deg,var(--blue),var(--blue-2));color:#fff;font-weight:900;text-align:center;box-shadow:0 14px 30px rgba(7,95,228,.23);transition:transform .2s ease,box-shadow .2s ease}
+    .psi-viral-page .pv-btn:hover{transform:translateY(-2px);box-shadow:0 18px 34px rgba(7,95,228,.28)}
+    .psi-viral-page .pv-btn:focus-visible{outline:3px solid #98c2ff;outline-offset:3px}
+    .psi-viral-page .pv-note{max-width:610px;margin-top:12px;color:#647088;font-size:13px}
+    .psi-viral-page .pv-card{border:1px solid var(--line);border-radius:8px;background:#fff;box-shadow:0 10px 26px rgba(20,49,92,.055)}
+    .psi-viral-page .pv-icon{width:42px;height:42px;border-radius:8px;background:#ecf4ff;color:var(--blue);display:grid;place-items:center;flex:0 0 auto}
+    .psi-viral-page .pv-icon svg{width:22px;height:22px;stroke:currentColor;stroke-width:2;fill:none;stroke-linecap:round;stroke-linejoin:round}
+    .psi-viral-page .pv-section-head{text-align:center;max-width:820px;margin:0 auto 30px}
+
+    .psi-viral-page .pv-header{position:sticky;top:0;z-index:50;border-bottom:1px solid #e8eef7;background:rgba(255,255,255,.94);backdrop-filter:blur(14px)}
+    .psi-viral-page .pv-header-inner{min-height:70px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+    .psi-viral-page .pv-logo{font-size:23px;font-weight:950;color:var(--navy);white-space:nowrap}
+    .psi-viral-page .pv-logo span{color:var(--blue)}
+    .psi-viral-page .pv-nav{display:flex;align-items:center;gap:26px;color:#2d3b54;font-size:14px;font-weight:750}
+    .psi-viral-page .pv-nav a:hover{color:var(--blue)}
+    .psi-viral-page .pv-header .pv-btn{min-height:44px;padding:10px 16px;font-size:14px}
+
+    .psi-viral-page .pv-hero{padding:54px 0 44px;background:linear-gradient(180deg,#fff 0%,#f7faff 100%)}
+    .psi-viral-page .pv-hero-grid{display:grid;grid-template-columns:1.03fr .97fr;align-items:start;gap:46px}
+    .psi-viral-page .pv-hero-copy{display:flex;flex-direction:column;align-items:flex-start;gap:18px}
+    .psi-viral-page .pv-checks{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px 14px;margin:0;padding:0;list-style:none}
+    .psi-viral-page .pv-checks li{display:flex;align-items:center;gap:9px;color:#31405b;font-weight:760}
+    .psi-viral-page .pv-check{width:20px;height:20px;border-radius:50%;background:var(--green);display:grid;place-items:center;flex:0 0 auto}
+    .psi-viral-page .pv-check svg{width:12px;height:12px;stroke:#fff;stroke-width:3;fill:none}
+    .psi-viral-page .pv-hero-media{display:grid;padding-top:50px}
+    .psi-viral-page .pv-video{position:relative;aspect-ratio:16/10;border-radius:8px;overflow:hidden;background:linear-gradient(145deg,#0a3579,#075fe4);border:1px solid rgba(6,27,67,.12);box-shadow:0 14px 34px rgba(7,95,228,.16);isolation:isolate}
+    .psi-viral-page .pv-video::before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(255,255,255,.04),rgba(2,15,39,.42));pointer-events:none}
+    .psi-viral-page .pv-video-btn{position:absolute;inset:0;width:100%;height:100%;border:0;background:transparent;color:#fff;display:grid;place-items:center;cursor:pointer;padding:0}
+    .psi-viral-page .pv-video-center{position:relative;z-index:1;display:grid;justify-items:center;gap:12px;text-align:center}
+    .psi-viral-page .pv-play{width:72px;height:72px;border:4px solid #fff;border-radius:50%;display:grid;place-items:center;filter:drop-shadow(0 8px 16px rgba(0,0,0,.18));transition:transform .2s ease}
+    .psi-viral-page .pv-video-btn:hover .pv-play{transform:scale(1.04)}
+    .psi-viral-page .pv-play svg{width:29px;height:29px;fill:#fff;transform:translateX(2px)}
+    .psi-viral-page .pv-video-title{font-size:19px;font-weight:900}
+    .psi-viral-page .pv-video-sub{font-size:13px;color:#dbe8ff}
+    .psi-viral-page .pv-video iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+    .psi-viral-page .pv-video-fallback{position:absolute;inset:0;display:grid;place-items:center;padding:24px;color:#fff;font-weight:900;text-align:center;text-decoration:underline;text-underline-offset:4px}
+    .psi-viral-page .pv-video-cta{display:grid;justify-items:stretch;gap:12px;margin-top:18px;text-align:center}
+    .psi-viral-page .pv-video-cta .pv-note{margin-top:0}
+    .psi-viral-page .pv-video-cta .pv-checks{width:100%;grid-template-columns:1fr 1fr;gap:8px 10px;margin:0 0 2px;padding:14px;border:1px solid #dce7f6;border-radius:8px;background:#fff;text-align:left;box-shadow:0 10px 24px rgba(20,49,92,.06)}
+    .psi-viral-page .pv-video-cta .pv-checks li{align-items:flex-start;gap:8px;color:#26364f;font-size:14px;line-height:1.25;font-weight:850}
+    .psi-viral-page .pv-video-cta .pv-check{width:18px;height:18px;margin-top:0}
+    .psi-viral-page .pv-video-cta .pv-check svg{width:11px;height:11px}
+    .psi-viral-page .pv-video-cta .pv-btn{justify-self:center}
+
+    .psi-viral-page .pv-banner{margin-top:32px;overflow:hidden;border:1px solid #dce7f6;border-radius:8px;background:#fff;box-shadow:0 14px 34px rgba(20,49,92,.08)}
+    .psi-viral-page .pv-banner img{width:100%}
+    .psi-viral-page .pv-grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+    .psi-viral-page .pv-topic{padding:22px;display:flex;gap:15px;align-items:flex-start}
+    .psi-viral-page .pv-topic p{margin-top:8px;color:var(--muted);font-size:14px}
+    .psi-viral-page .pv-gap-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+    .psi-viral-page .pv-mini{min-height:82px;padding:18px;display:flex;align-items:center;gap:12px;font-weight:850}
+    .psi-viral-page .pv-transform{margin-top:30px;padding:30px;border:1px solid #cfe1fb;border-radius:8px;background:linear-gradient(135deg,#f8fbff,#eef5ff)}
+    .psi-viral-page .pv-transform h3{text-align:center;font-size:24px}
+    .psi-viral-page .pv-flow{margin-top:24px;display:grid;grid-template-columns:repeat(5,1fr);gap:10px}
+    .psi-viral-page .pv-flow-step{padding:14px 12px;border:1px solid #b9d4fb;border-radius:8px;background:#fff;color:#1155b8;text-align:center;font-weight:850}
+    .psi-viral-page .pv-flow-step:last-child{background:var(--blue);border-color:var(--blue);color:#fff}
+    .psi-viral-page .pv-transform p{max-width:780px;margin:18px auto 0;color:var(--muted);text-align:center}
+    .psi-viral-page .pv-process{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:28px}
+    .psi-viral-page .pv-process-card{padding:22px 18px 20px;min-height:166px}
+    .psi-viral-page .pv-step-num{width:28px;height:28px;border-radius:50%;display:grid;place-items:center;background:var(--blue);color:#fff;font-size:12px;font-weight:900}
+    .psi-viral-page .pv-process-card header{display:flex;align-items:center;gap:12px;margin-bottom:12px}
+    .psi-viral-page .pv-process-card p{color:var(--muted);font-size:14px}
+    .psi-viral-page .pv-mantra{width:max-content;max-width:100%;margin:20px auto 0;padding:8px 15px;border:1px solid #8ab9ff;border-radius:999px;background:#fff;color:var(--blue);font-size:13px;font-weight:900}
+    .psi-viral-page .pv-deliveries{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:28px}
+    .psi-viral-page .pv-delivery{min-height:72px;padding:16px;display:flex;align-items:center;gap:12px;font-weight:850}
+    .psi-viral-page .pv-delivery .pv-icon{width:36px;height:36px}
+    .psi-viral-page .pv-bonus-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+    .psi-viral-page .pv-bonus{padding:24px;display:flex;gap:17px;align-items:flex-start;background:#fff}
+    .psi-viral-page .pv-bonus .pv-icon{width:52px;height:52px;background:#fff4df;color:#a96100}
+    .psi-viral-page .pv-bonus p{margin-top:7px;color:var(--muted);font-size:14px}
+    .psi-viral-page .pv-fit-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:22px}
+    .psi-viral-page .pv-fit{padding:24px}
+    .psi-viral-page .pv-fit--yes{border-color:#c7e9d7;background:#f5fcf8}
+    .psi-viral-page .pv-fit--no{border-color:#ffd5d5;background:#fff7f7}
+    .psi-viral-page .pv-fit h3{font-size:22px;margin-bottom:14px}
+    .psi-viral-page .pv-fit--yes h3{color:var(--green)}
+    .psi-viral-page .pv-fit--no h3{color:var(--red)}
+    .psi-viral-page .pv-list{list-style:none;padding:0;margin:0;display:grid;gap:10px}
+    .psi-viral-page .pv-list li{display:flex;gap:9px;align-items:flex-start;color:#46546d;font-size:14px}
+    .psi-viral-page .pv-dot{width:19px;height:19px;border-radius:50%;display:grid;place-items:center;color:#fff;font-size:12px;font-weight:900;flex:0 0 auto;margin-top:1px}
+    .psi-viral-page .pv-fit--yes .pv-dot{background:var(--green)}
+    .psi-viral-page .pv-fit--no .pv-dot{background:var(--red)}
+    .psi-viral-page .pv-offer{display:grid;grid-template-columns:1fr 360px;align-items:stretch;gap:20px;margin-top:30px}
+    .psi-viral-page .pv-super-benefits{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+    .psi-viral-page .pv-benefit{padding:22px 16px;display:grid;align-content:start;justify-items:start;gap:12px;font-weight:850}
+    .psi-viral-page .pv-price{padding:26px;border:2px solid var(--blue);border-radius:8px;background:#fff;box-shadow:0 14px 34px rgba(7,95,228,.1);display:flex;flex-direction:column;justify-content:center;text-align:center}
+    .psi-viral-page .pv-price-label{color:var(--blue);font-size:13px;font-weight:900;text-transform:uppercase}
+    .psi-viral-page .pv-price-main{margin:12px 0 8px;font-size:26px;line-height:1.2;font-weight:900;color:var(--navy)}
+    .psi-viral-page .pv-price-main strong{color:var(--blue)}
+    .psi-viral-page .pv-price-after{margin-bottom:18px;color:#536078;font-size:14px}
+    .psi-viral-page .pv-faq{display:grid;gap:10px;max-width:870px;margin:30px auto 0}
+    .psi-viral-page details{border:1px solid var(--line);border-radius:8px;background:#fff;overflow:hidden}
+    .psi-viral-page summary{list-style:none;cursor:pointer;padding:17px 18px;font-weight:850;display:flex;align-items:center;justify-content:space-between;gap:16px}
+    .psi-viral-page summary::-webkit-details-marker{display:none}
+    .psi-viral-page summary::after{content:"+";color:var(--blue);font-size:24px;font-weight:500;line-height:1}
+    .psi-viral-page details[open] summary::after{content:"-"}
+    .psi-viral-page details p{padding:0 18px 18px;color:var(--muted);font-size:14px}
+    .psi-viral-page .pv-final{padding:24px 0 58px;background:#fff}
+    .psi-viral-page .pv-final-banner{overflow:hidden;border-radius:8px;border:1px solid #d7e5f7;box-shadow:var(--shadow)}
+    .psi-viral-page .pv-final-banner a{display:block}
+    .psi-viral-page .pv-final-banner img{width:100%}
+    .psi-viral-page .pv-final-button{display:flex;justify-content:center;margin-top:18px}
+    .psi-viral-page .pv-footer{text-align:center;color:#8a94a7;font-size:12px;padding:18px 0 0}
+
+    @media(max-width:980px){
+      .psi-viral-page .pv-nav{display:none}
+      .psi-viral-page .pv-hero-grid{grid-template-columns:1fr;gap:32px}
+      .psi-viral-page .pv-hero-copy{align-items:center;text-align:center}
+      .psi-viral-page .pv-hero-media{padding-top:0}
+      .psi-viral-page .pv-lead,.psi-viral-page .pv-note{margin-inline:auto}
+      .psi-viral-page .pv-checks{width:min(620px,100%);text-align:left}
+      .psi-viral-page .pv-grid-3,.psi-viral-page .pv-process,.psi-viral-page .pv-deliveries{grid-template-columns:1fr 1fr}
+      .psi-viral-page .pv-gap-grid{grid-template-columns:1fr 1fr}
+      .psi-viral-page .pv-flow{grid-template-columns:1fr}
+      .psi-viral-page .pv-offer{grid-template-columns:1fr}
+    }
+    @media(max-width:720px){
+      .psi-viral-page .pv-shell{width:min(100% - 22px,1120px)}
+      .psi-viral-page .pv-section{padding:52px 0}
+      .psi-viral-page .pv-header-inner{min-height:64px}
+      .psi-viral-page .pv-logo{font-size:20px}
+      .psi-viral-page .pv-header .pv-btn{min-height:42px;padding:9px 12px;font-size:12px;max-width:148px;line-height:1.15}
+      .psi-viral-page .pv-hero{padding:34px 0}
+      .psi-viral-page h1{font-size:clamp(34px,10vw,48px)}
+      .psi-viral-page .pv-checks,.psi-viral-page .pv-grid-3,.psi-viral-page .pv-gap-grid,.psi-viral-page .pv-process,.psi-viral-page .pv-deliveries,.psi-viral-page .pv-bonus-grid,.psi-viral-page .pv-fit-grid,.psi-viral-page .pv-super-benefits{grid-template-columns:1fr}
+      .psi-viral-page .pv-transform{padding:24px 16px}
+      .psi-viral-page .pv-bonus{padding:20px;flex-direction:column}
+      .psi-viral-page .pv-video-cta .pv-checks{grid-template-columns:1fr}
+      .psi-viral-page .pv-btn{width:100%}
+      .psi-viral-page .pv-final-button .pv-btn{width:100%}
+    }
+    @media(prefers-reduced-motion:reduce){.psi-viral-page *{scroll-behavior:auto!important;transition:none!important}}
+  </style>
+</head>
+<body style="margin:0">
+<div class="psi-viral-page" id="psi-viral-top">
+  <header class="pv-header">
+    <div class="pv-shell pv-header-inner">
+      <a class="pv-logo" href="#psi-viral-top" aria-label="Psi Viral">PSI <span>VIRAL</span></a>
+      <nav class="pv-nav" aria-label="Navegação principal">
+        <a href="#metodo">Método</a>
+        <a href="#comunidade">Comunidade</a>
+        <a href="#bonus">Bônus</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+      <a class="pv-btn" data-psi-cta href="https://chat.whatsapp.com/KjlDFo65lWBKlkRePNUTtp" target="_blank" rel="noopener">Entrar no Grupo</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="pv-hero" id="metodo">
+      <div class="pv-shell">
+        <div class="pv-hero-grid">
+          <div class="pv-hero-copy">
+            <span class="pv-kicker">Lançamento para psicólogas</span>
+            <h1>Você já entendeu o <span class="pv-blue">método.</span><br>Agora falta transformar tudo isso em <span class="pv-blue">rotina, execução e resultado.</span></h1>
+            <p class="pv-lead">Depois de 3 encontros gratuitos, chegou a hora do próximo passo: entrar no Grupo das Super Interessadas e receber acesso antecipado à abertura da comunidade Psi Viral.</p>
+          </div>
+
+          <div class="pv-hero-media">
+            <div class="pv-video" aria-label="Vídeo do pitch de vendas">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/gFFzCE0N69U?autoplay=1&mute=1&playsinline=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <div class="pv-video-cta">
+              <ul class="pv-checks" aria-label="Benefícios principais antes do cadastro">
+                <li><span class="pv-check"><svg viewBox="0 0 24 24"><path d="m5 12 4 4 10-10"/></svg></span>Conteúdo com função</li>
+                <li><span class="pv-check"><svg viewBox="0 0 24 24"><path d="m5 12 4 4 10-10"/></svg></span>Audiência certa</li>
+                <li><span class="pv-check"><svg viewBox="0 0 24 24"><path d="m5 12 4 4 10-10"/></svg></span>Mais oportunidades de receita</li>
+                <li><span class="pv-check"><svg viewBox="0 0 24 24"><path d="m5 12 4 4 10-10"/></svg></span>Acompanhamento prático</li>
+              </ul>
+              <a class="pv-btn" data-psi-cta href="https://chat.whatsapp.com/KjlDFo65lWBKlkRePNUTtp" target="_blank" rel="noopener">QUERO ENTRAR NO GRUPO DAS SUPER INTERESSADAS</a>
+              <p class="pv-note">Abertura antecipada às 7h15 • abertura geral às 7h30 • as 10 primeiras inscritas recebem a mentoria individual.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="pv-banner">
+          <img src="BANNER 1 - 3 personagens v2.png" width="2048" height="768" alt="Rian Lucas, Rene Cardoso e Renier: estratégia, conteúdo e crescimento digital para psicólogas" decoding="async">
+        </div>
+      </div>
+    </section>
+
+    <section class="pv-section pv-below">
+      <div class="pv-shell">
+        <div class="pv-section-head">
+          <h2>O que você viu nos <span class="pv-blue">3 encontros</span></h2>
+        </div>
+        <div class="pv-grid-3">
+          <article class="pv-card pv-topic"><span class="pv-icon"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="5" rx="1"/><path d="M7 9v7m10-7v7M4 20h16M6 16h3v4H6zm9 0h3v4h-3zm-5-3h4v7h-4z"/></svg></span><div><h3>Esteira de produtos</h3><p>Pare de depender apenas da indicação e crie próximos passos lógicos para a sua audiência.</p></div></article>
+          <article class="pv-card pv-topic"><span class="pv-icon"><svg viewBox="0 0 24 24"><path d="M6 3h9l3 3v15H6z"/><path d="M14 3v4h4M9 11h6M9 15h6"/></svg></span><div><h3>Conteúdo com função</h3><p>Atraia pacientes mais alinhados e transforme conteúdo em oportunidade, em vez de simplesmente postar.</p></div></article>
+          <article class="pv-card pv-topic"><span class="pv-icon"><svg viewBox="0 0 24 24"><path d="M5 12h14M14 7l5 5-5 5"/></svg></span><div><h3>Próximo passo</h3><p>Construa uma jornada coerente em vez de criar produtos soltos e desconectados entre si.</p></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="pv-section pv-section--soft pv-below">
+      <div class="pv-shell">
+        <div class="pv-section-head">
+          <h2>Saber não significa conseguir <span class="pv-blue">aplicar sozinha</span></h2>
+          <p class="pv-sub">A maior trava depois da aula não é falta de informação. É voltar para a rotina sem tempo, sem clareza, sem feedback e sem saber o que ajustar.</p>
+        </div>
+        <div class="pv-gap-grid">
+          <div class="pv-card pv-mini"><span class="pv-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span>Falta tempo</div>
+          <div class="pv-card pv-mini"><span class="pv-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M9.7 9a2.6 2.6 0 1 1 4.1 2.1c-1 .7-1.8 1.2-1.8 2.4M12 17h.01"/></svg></span>Falta clareza</div>
+          <div class="pv-card pv-mini"><span class="pv-icon"><svg viewBox="0 0 24 24"><path d="M4 5h16v11H8l-4 4z"/><path d="M8 10h.01M12 10h.01M16 10h.01"/></svg></span>Falta feedback</div>
+          <div class="pv-card pv-mini"><span class="pv-icon"><svg viewBox="0 0 24 24"><path d="M4 20v-7m0-4V4m8 16v-4m0-4V4m8 16v-9m0-4V4M1 13h6m2 3h6m2-5h6"/></svg></span>Falta saber o que ajustar</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="pv-section pv-below" id="comunidade">
+      <div class="pv-shell">
+        <div class="pv-section-head">
+          <h2>O que é a <span class="pv-blue">comunidade Psi Viral</span></h2>
+          <p class="pv-sub">Você não precisa virar influencer para viver melhor da Psicologia. A proposta é transformar o conhecimento que você já tem em uma estrutura de negócio com direção.</p>
+        </div>
+        <div class="pv-transform">
+          <h3>Conhecimento que vira oportunidade</h3>
+          <div class="pv-flow" aria-label="Fluxo de transformação">
+            <div class="pv-flow-step">Conhecimento</div>
+            <div class="pv-flow-step">Conteúdo</div>
+            <div class="pv-flow-step">Audiência certa</div>
+            <div class="pv-flow-step">Oportunidades</div>
+            <div class="pv-flow-step">Receita</div>
+          </div>
+          <p>A comunidade foi criada para ajudar você a transformar estratégia em prática — com acompanhamento, execução, análise e melhoria contínua.</p>
+        </div>
+
+        <div class="pv-section" style="padding-bottom:0">
+          <div class="pv-section-head">
+            <h2>Como funciona <span class="pv-blue">na prática</span></h2>
+          </div>
+          <div class="pv-process">
+            <article class="pv-card pv-process-card"><header><span class="pv-step-num">1</span><h3>Hot Seats</h3></header><p>Diagnóstico dos gargalos reais do seu perfil, conteúdo e negócio.</p></article>
+            <article class="pv-card pv-process-card"><header><span class="pv-step-num">2</span><h3>Oficinas mão na massa</h3></header><p>Momentos para construir junto e tirar as estruturas do papel.</p></article>
+            <article class="pv-card pv-process-card"><header><span class="pv-step-num">3</span><h3>Pomodoros de roteiro</h3></header><p>Escreva roteiros com direção, intenção e acompanhamento.</p></article>
+            <article class="pv-card pv-process-card"><header><span class="pv-step-num">4</span><h3>Análise de vídeos</h3></header><p>Publique, analise o desempenho e melhore no próximo.</p></article>
+            <article class="pv-card pv-process-card"><header><span class="pv-step-num">5</span><h3>IA de apoio</h3></header><p>Ajuda com ideias, ângulos, variações e revisão de roteiros.</p></article>
+            <article class="pv-card pv-process-card"><header><span class="pv-step-num">6</span><h3>Ambiente de troca</h3></header><p>Cresça com apoio, prática e uma comunidade na mesma direção.</p></article>
+          </div>
+          <div class="pv-mantra">Faz e melhora no próximo.</div>
+        </div>
+
+        <div class="pv-section" style="padding-bottom:0">
+          <div class="pv-section-head">
+            <h2>O que você <span class="pv-blue">recebe</span></h2>
+          </div>
+          <div class="pv-deliveries">
+            <div class="pv-card pv-delivery"><span class="pv-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="m10 8 6 4-6 4z"/></svg></span>Método gravado</div>
+            <div class="pv-card pv-delivery"><span class="pv-icon"><svg viewBox="0 0 24 24"><path d="M6 20h12M8 16h8M9 3h6v10H9z"/></svg></span>Hot Seats mensais</div>
+            <div class="pv-card pv-delivery"><span class="pv-icon"><svg viewBox="0 0 24 24"><path d="M4 12a8 8 0 0 1 16 0M7 12a5 5 0 0 1 10 0M10 12a2 2 0 0 1 4 0"/></svg></span>Oficinas ao vivo</div>
+            <div class="pv-card pv-delivery"><span class="pv-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="13" r="7"/><path d="M12 6V3m-3 0h6"/></svg></span>Pomodoros de roteiro</div>
+            <div class="pv-card pv-delivery"><span class="pv-icon"><svg viewBox="0 0 24 24"><path d="M5 20V10m5 10V4m5 16v-7m5 7V7"/></svg></span>Análise de vídeos</div>
+            <div class="pv-card pv-delivery"><span class="pv-icon"><svg viewBox="0 0 24 24"><path d="m12 3 1.5 4.5L18 9l-4.5 1.5L12 15l-1.5-4.5L6 9l4.5-1.5z"/></svg></span>IA de apoio</div>
+            <div class="pv-card pv-delivery"><span class="pv-icon"><svg viewBox="0 0 24 24"><path d="m12 3 2.5 5 5.5.8-4 3.9.9 5.5L12 15.7l-4.9 2.5.9-5.5-4-3.9 5.5-.8z"/></svg></span>Convidados especiais</div>
+            <div class="pv-card pv-delivery"><span class="pv-icon"><svg viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2M9 11a4 4 0 1 0 0-8 4 4 0 0 0 0 8M22 21v-2a4 4 0 0 0-3-3.9"/></svg></span>Ambiente de troca</div>
+            <div class="pv-card pv-delivery"><span class="pv-icon"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M8 3v4m8-4v4M3 10h18"/></svg></span>1 ano de acesso</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="pv-section pv-section--soft pv-below" id="bonus">
+      <div class="pv-shell">
+        <div class="pv-section-head">
+          <h2>Bônus da <span class="pv-blue">primeira turma</span></h2>
+        </div>
+        <div class="pv-bonus-grid">
+          <article class="pv-card pv-bonus"><span class="pv-icon"><svg viewBox="0 0 24 24"><path d="M20 12v9H4v-9M2 7h20v5H2zM12 7v14M12 7H7.5A2.5 2.5 0 1 1 10 4.5C10 7 12 7 12 7zm0 0h4.5A2.5 2.5 0 1 0 14 4.5C14 7 12 7 12 7z"/></svg></span><div><h3>Desafio Acelerador</h3><p>15 dias de execução para tirar o método do papel, começar a construir audiência, publicar, analisar e melhorar.</p></div></article>
+          <article class="pv-card pv-bonus"><span class="pv-icon"><svg viewBox="0 0 24 24"><path d="m3 5 4 5 5-7 5 7 4-5-2 14H5z"/></svg></span><div><h3>Mentoria Individual para as 10 primeiras</h3><p>As 10 primeiras inscritas recebem um encontro individual de aproximadamente 1h30 para diagnosticar perfil, conteúdo, posicionamento, esteira, vendas e gargalos.</p></div></article>
+        </div>
+
+        <div class="pv-fit-grid">
+          <article class="pv-card pv-fit pv-fit--yes"><h3>Para quem é</h3><ul class="pv-list"><li><span class="pv-dot">✓</span>Psicólogas que querem atrair pacientes mais alinhados</li><li><span class="pv-dot">✓</span>Quem deseja produzir conteúdo com estratégia</li><li><span class="pv-dot">✓</span>Quem quer construir novas oportunidades de receita</li><li><span class="pv-dot">✓</span>Quem está disposta a executar e ajustar</li></ul></article>
+          <article class="pv-card pv-fit pv-fit--no"><h3>Não é para você se...</h3><ul class="pv-list"><li><span class="pv-dot">×</span>Procura fórmula mágica</li><li><span class="pv-dot">×</span>Quer resultado sem aplicação</li><li><span class="pv-dot">×</span>Quer apenas consumir mais conteúdo</li><li><span class="pv-dot">×</span>Não está pronta para testar, aparecer de alguma forma e ajustar</li></ul></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="pv-section pv-below">
+      <div class="pv-shell">
+        <div class="pv-section-head">
+          <h2>Por que entrar no Grupo das <span class="pv-blue">Super Interessadas</span></h2>
+          <p class="pv-sub">O grupo foi criado para quem já considera a Psi Viral um próximo passo e quer estar na frente no momento da abertura.</p>
+        </div>
+        <div class="pv-offer">
+          <div class="pv-super-benefits">
+            <div class="pv-card pv-benefit"><span class="pv-icon"><svg viewBox="0 0 24 24"><path d="M22 2 9 15M22 2l-7 20-4-9-9-4z"/></svg></span>Acesso antecipado ao link</div>
+            <div class="pv-card pv-benefit"><span class="pv-icon"><svg viewBox="0 0 24 24"><path d="m12 3 2.5 5 5.5.8-4 3.9.9 5.5L12 15.7l-4.9 2.5.9-5.5-4-3.9 5.5-.8z"/></svg></span>Mais chances de estar entre as 10 primeiras</div>
+            <div class="pv-card pv-benefit"><span class="pv-icon"><svg viewBox="0 0 24 24"><path d="M20 12V6H8L3 11l8 8 9-9z"/><circle cx="15" cy="9" r="1"/></svg></span>Condição especial da abertura</div>
+          </div>
+          <aside class="pv-price" aria-label="Condição da abertura">
+            <div class="pv-price-label">Condição da abertura</div>
+            <div class="pv-price-main">Segunda-feira:<br><strong>12x de R$82,43</strong> ou <strong>R$797 à vista</strong></div>
+            <div class="pv-price-after">A partir de terça: R$997 à vista</div>
+            <a class="pv-btn" data-psi-cta href="https://chat.whatsapp.com/KjlDFo65lWBKlkRePNUTtp" target="_blank" rel="noopener">QUERO ENTRAR NO GRUPO</a>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section class="pv-section pv-section--soft pv-below" id="faq">
+      <div class="pv-shell">
+        <div class="pv-section-head">
+          <h2>Perguntas <span class="pv-blue">frequentes</span></h2>
+        </div>
+        <div class="pv-faq">
+          <details><summary>Quando abre?</summary><p>O Grupo das Super Interessadas recebe o link às 7h15. A abertura geral acontece às 7h30.</p></details>
+          <details><summary>Quanto tempo de acesso?</summary><p>O acesso à comunidade é de 1 ano.</p></details>
+          <details><summary>Preciso aparecer?</summary><p>Você será orientada a encontrar formatos que façam sentido para o seu contexto, mas construir autoridade e audiência exige aparecer de alguma forma.</p></details>
+          <details><summary>E se eu não for uma das 10 primeiras?</summary><p>Você entra normalmente na comunidade. A diferença é que a mentoria individual é um bônus exclusivo para as 10 primeiras inscrições concluídas.</p></details>
+          <details><summary>É para quem está começando?</summary><p>Sim, desde que você esteja disposta a executar. A proposta é dar direção, acompanhamento e um processo para fazer, analisar e melhorar.</p></details>
+          <details><summary>A Psi Viral promete resultado em um prazo específico?</summary><p>Não. Resultado depende do contexto, da execução e da consistência de cada profissional. A comunidade foi construída para acelerar aprendizado, aplicação, análise e melhoria — sem prometer prazo fixo de faturamento ou agenda.</p></details>
+        </div>
+      </div>
+    </section>
+
+    <section class="pv-final pv-below">
+      <div class="pv-shell">
+        <div class="pv-final-banner">
+          <a data-psi-cta href="https://chat.whatsapp.com/KjlDFo65lWBKlkRePNUTtp" target="_blank" rel="noopener" aria-label="Entrar no Grupo das Super Interessadas">
+            <img src="BANNER 2 - 3 personagens.png" width="2172" height="724" loading="lazy" decoding="async" alt="Se esse é o próximo passo para você, entre agora no Grupo das Super Interessadas. Receba o link antes da abertura geral.">
+          </a>
+        </div>
+        <div class="pv-final-button"><a class="pv-btn" data-psi-cta href="https://chat.whatsapp.com/KjlDFo65lWBKlkRePNUTtp" target="_blank" rel="noopener">ENTRAR NO GRUPO DAS SUPER INTERESSADAS</a></div>
+        <div class="pv-footer">Psi Viral • Estratégia, conteúdo e crescimento digital para psicólogas.</div>
+      </div>
+    </section>
+  </main>
+
+</div>
+</body>
+</html>
