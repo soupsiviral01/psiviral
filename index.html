@@ -7,8 +7,8 @@
   <meta name="description" content="Pagina principal do Psi Flix em layout inspirado em streaming, com destaque para especialistas e aulas gratuitas.">
   <meta name="theme-color" content="#050505">
   <meta name="referrer" content="strict-origin-when-cross-origin">
-  <link rel="icon" type="image/png" href="favicon-psiviral-256.png">
-  <link rel="apple-touch-icon" href="favicon-psiviral-256.png">
+  <link rel="icon" type="image/webp" href="logo.webp">
+  <link rel="apple-touch-icon" href="logo.webp">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -157,11 +157,9 @@
       width:44px;
       height:44px;
       border-radius:999px;
-      display:grid;
-      place-items:center;
-      background:linear-gradient(135deg, #7b4ad6, #4d2a8b);
-      font-size:1.85rem;
-      line-height:1;
+      display:block;
+      object-fit:contain;
+      filter:drop-shadow(0 8px 18px rgba(255,32,32,.18));
     }
     .hero{
       padding:8px 0 2px;
@@ -753,7 +751,7 @@
             </svg>
           </button>
           <button class="profile" type="button" aria-label="Perfil do usuario">
-            <span class="avatar" aria-hidden="true">&#9673;</span>
+            <img class="avatar" src="logo.webp" alt="Logo Psi Viral">
             <svg class="caret" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
               <path d="m6 9 6 6 6-6"></path>
             </svg>
