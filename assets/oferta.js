@@ -95,5 +95,10 @@
   window.addEventListener('load', scheduleScroll, { once: true });
   sticky?.addEventListener('focusout', scheduleScroll);
   if ('ResizeObserver' in window) new ResizeObserver(scheduleScroll).observe(document.body);
-  scheduleScroll();
+  // Let the mobile page paint before measuring sections for scroll controls.
+  if (window.matchMedia('(max-width: 700px)').matches) {
+    window.requestAnimationFrame(() => window.requestAnimationFrame(scheduleScroll));
+  } else {
+    scheduleScroll();
+  }
 })();

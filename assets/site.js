@@ -34,7 +34,7 @@
     if (Array.isArray(stored)) saved = new Set(stored.filter((value) => identifiers.has(value)));
   } catch {}
   const normalize = (value) => value.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
-  const updateCatalog = () => {
+  const updateCatalog = (resetScroll = true) => {
     const query = normalize(search?.value.trim() || '');
     let count = 0;
     cards.forEach((card) => {
@@ -50,7 +50,7 @@
     if (resultCount) resultCount.textContent = `${String(count).padStart(2, '0')} ${count === 1 ? 'conteúdo disponível' : 'conteúdos disponíveis'}`;
     if (savedCount) savedCount.textContent = String(saved.size);
     const catalog = document.querySelector('#catalog-cards');
-    if (catalog) catalog.scrollLeft = 0;
+    if (catalog && resetScroll) catalog.scrollLeft = 0;
     filters.forEach((filter) => filter.setAttribute('aria-pressed', String(filter.dataset.filter === activeFilter)));
   };
   const announce = (message) => {
@@ -101,7 +101,8 @@
     if (search) search.value = '';
     updateCatalog();
   }));
-  if (cards.length) updateCatalog();
+  // The mobile carousel starts at zero; avoid forcing its layout before first paint.
+  if (cards.length) updateCatalog(!window.matchMedia('(max-width: 700px)').matches);
 
   const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
   if ('IntersectionObserver' in window && !reducedMotion.matches) {

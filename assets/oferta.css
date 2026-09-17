@@ -67,10 +67,10 @@ h1,h2,h3,p,ul,ol{margin:0}
 .hero-video{overflow:hidden;border:1px solid #ffffff20;border-radius:8px;background:#000;box-shadow:0 24px 65px #0004}
 .hero-video iframe{display:block;width:100%;aspect-ratio:16/9;border:0}
 .video-preview{position:relative;display:grid;place-items:center;isolation:isolate;aspect-ratio:16/9;overflow:hidden;background:radial-gradient(ellipse at 50% 10%,#613044,transparent 80%),#171018}
-.video-preview>img{position:absolute;bottom:0;left:50%;transform:translateX(-50%);width:80%;height:100%;object-fit:contain;object-position:bottom;opacity:.65;transition:opacity .4s,scale .5s var(--ease);z-index:-2}
+.video-preview img{position:absolute;bottom:0;left:50%;transform:translateX(-50%);width:80%;height:100%;object-fit:contain;object-position:bottom;opacity:.65;transition:opacity .4s,scale .5s var(--ease);z-index:-2}
 .video-preview::after{content:'';position:absolute;inset:0;background:linear-gradient(0deg,#100b13,transparent 80%);z-index:-1}
 .video-play-icon{display:grid;place-items:center;width:70px;height:70px;padding-left:4px;border:1px solid #ffffff70;background:#ffffff16;backdrop-filter:blur(10px);border-radius:50%;font-size:34px;color:#fff;transition:transform .3s,background .3s}
-.video-preview:hover .video-play-icon{transform:scale(1.08);background:var(--accent);border-color:var(--accent)}.video-preview:hover>img{opacity:.85;scale:1.025}
+.video-preview:hover .video-play-icon{transform:scale(1.08);background:var(--accent);border-color:var(--accent)}.video-preview:hover img{opacity:.85;scale:1.025}
 .video-preview:focus-visible{outline-offset:-5px}.video-preview-title{position:absolute;left:28px;right:28px;bottom:24px;font-size:23px;line-height:1.3;font-weight:600;letter-spacing:-.4px}.video-preview-title>span{display:block;margin-bottom:8px;font-size:9px;letter-spacing:1.6px;text-transform:uppercase;color:#d6b5c3;font-weight:500}
 .video-caption>a{display:inline-flex;align-items:center;min-height:44px;font-size:11px;white-space:nowrap}.video-caption>a:hover{color:#fff}
 .video-caption{display:flex;justify-content:space-between;align-items:center;gap:20px;padding-block:18px;border-bottom:1px solid var(--line);font-size:12px;color:#a99eaf}
