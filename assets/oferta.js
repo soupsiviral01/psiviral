@@ -47,7 +47,7 @@
         reveals.unobserve(target);
       });
     }, { threshold: 0.08 });
-    document.querySelectorAll('.section-head,.hero-main,.panel,.card,.timeline li,.faq details,.cta-panel').forEach((element) => {
+    document.querySelectorAll('.section:not(.presentation) .section-head,.card,.timeline li,.faq details,.cta-panel').forEach((element) => {
       element.classList.add('reveal');
       if (element.parentElement.matches('.grid-4,.grid-3,.grid-2,.timeline')) {
         const index = Array.from(element.parentElement.children).indexOf(element);
@@ -71,15 +71,15 @@
   let queued = false;
   const updateScroll = () => {
     queued = false;
+    // Read geometry before changing styles, visibility or navigation attributes.
     const maxScroll = document.documentElement.scrollHeight - window.innerHeight;
-    if (progress) progress.style.transform = `scaleX(${maxScroll > 0 ? Math.max(0, Math.min(1, window.scrollY / maxScroll)) : 0})`;
-    if (sticky) {
-      const show = window.innerWidth <= 700 && purchase && purchase.getBoundingClientRect().bottom <= 84 && !visible(finalCta);
-      // Keep an actively focused checkout link available until focus leaves it.
-      if (show || !sticky.contains(document.activeElement)) sticky.hidden = !show;
-    }
+    const scrollProgress = maxScroll > 0 ? Math.max(0, Math.min(1, window.scrollY / maxScroll)) : 0;
+    const showSticky = window.innerWidth <= 700 && purchase && purchase.getBoundingClientRect().bottom <= 84 && !visible(finalCta);
     let current = null;
     sections.forEach((entry) => { if (entry.section.getBoundingClientRect().top <= 150) current = entry; });
+    if (progress) progress.style.transform = `scaleX(${scrollProgress})`;
+    // Keep an actively focused checkout link available until focus leaves it.
+    if (sticky && (showSticky || !sticky.contains(document.activeElement))) sticky.hidden = !showSticky;
     sections.forEach(({ link }) => {
       if (link === current?.link) link.setAttribute('aria-current', 'location');
       else link.removeAttribute('aria-current');
@@ -95,5 +95,5 @@
   window.addEventListener('load', scheduleScroll, { once: true });
   sticky?.addEventListener('focusout', scheduleScroll);
   if ('ResizeObserver' in window) new ResizeObserver(scheduleScroll).observe(document.body);
-  updateScroll();
+  scheduleScroll();
 })();
