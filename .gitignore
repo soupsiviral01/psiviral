@@ -8,3 +8,5 @@ desktop.ini
 # Temporary files
 *.tmp
 *.log
+.tools/
+.artifacts/
