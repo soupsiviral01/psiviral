@@ -18,7 +18,7 @@ svg{width:20px;height:20px;flex-shrink:0;fill:none;stroke:currentColor;stroke-wi
 [hidden]{display:none!important}
 :focus-visible{outline:2px solid #fff;outline-offset:5px}
 ::selection{background:#ae1735;color:#fff}
-.shell{width:min(var(--max),calc(100% - 96px));margin-inline:auto}
+.shell{width:calc(100% - 96px);max-width:var(--max);margin-inline:auto}
 .skip-link{position:fixed;left:24px;top:-70px;z-index:20;background:#fff;color:#111;padding:14px 20px;border-radius:6px}
 .skip-link:focus{top:12px}
 .site-header{position:sticky;top:0;z-index:10;background:#0b0b0df5;border-bottom:1px solid #ffffff0d}

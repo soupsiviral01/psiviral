@@ -15,7 +15,7 @@ h1,h2,h3,p,ul,ol{margin:0}
 [hidden]{display:none!important}
 :focus-visible{outline:2px solid #fff;outline-offset:5px}
 ::selection{background:#ae1735;color:#fff}
-.shell{width:min(var(--max),calc(100% - 96px));margin-inline:auto}
+.shell{width:calc(100% - 96px);max-width:var(--max);margin-inline:auto}
 .skip-link{position:fixed;top:-80px;left:20px;padding:14px 20px;background:#fff;color:#111;z-index:50;border-radius:4px}
 .skip-link:focus{top:12px}
 .topbar{position:sticky;top:0;z-index:20;border-bottom:1px solid var(--line);background:#0b0b0df5;backdrop-filter:blur(16px)}
