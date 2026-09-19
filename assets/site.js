@@ -18,7 +18,7 @@
     }
   });
 
-  const cards = [...document.querySelectorAll('[data-card]')];
+  const cards = [...document.querySelectorAll('[data-card]:not(.product-disabled)')];
   const filters = [...document.querySelectorAll('[data-filter]')];
   const search = document.querySelector('#catalog-search');
   const emptyState = document.querySelector('[data-empty]');

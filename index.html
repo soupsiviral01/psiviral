@@ -23,13 +23,13 @@
       <a class="brand" href="#inicio" aria-label="Psi Flix, início">PSI<span>FLIX</span><span class="brand-dot">.</span></a>
       <nav class="site-nav" id="site-navigation" aria-label="Navegação principal">
         <a href="#inicio" aria-current="page">Início</a>
-        <a href="#aulas" data-open-catalog>Explorar aulas</a>
+        <a href="#aulas" data-open-catalog>Comunidade Pro</a>
         <a href="#sobre">Sobre o Psi Flix</a>
-        <a href="#aulas" data-open-list data-catalog-controls hidden>Minha lista</a>
+        <a href="#aulas" data-open-list hidden>Minha lista</a>
       </nav>
       <div class="header-actions">
         <a class="header-link" href="oferta/">Conheça o Pro <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></a>
-        <button class="icon-button" type="button" aria-label="Buscar no catálogo" data-search-trigger data-catalog-controls hidden><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 4 4"/></svg></button>
+        <button class="icon-button" type="button" aria-label="Buscar no catálogo" data-search-trigger hidden><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 4 4"/></svg></button>
         <button class="icon-button menu-button" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="site-navigation" data-menu data-catalog-controls hidden><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg></button>
       </div>
     </div>
@@ -43,7 +43,7 @@
           <p class="hero-description">Menos acaso. Mais direção. Aprenda com especialistas e transforme conhecimento em movimento para viver da psicologia.</p>
           <div class="hero-meta"><span class="free">Aulas gratuitas</span><span class="meta-divider" aria-hidden="true"></span><span>No seu ritmo</span><span class="meta-divider" aria-hidden="true"></span><span>Para psicólogas</span></div>
           <div class="hero-actions">
-            <a class="button button-primary" href="#aulas" data-open-catalog><svg class="play-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m7 4 14 8-14 8z"/></svg>Explorar aulas</a>
+            <a class="button button-primary" href="#aulas" data-open-catalog><svg class="play-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m7 4 14 8-14 8z"/></svg>Ver comunidade</a>
             <a class="button button-secondary" href="oferta/">Conhecer a comunidade <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a>
           </div>
           <div class="hero-index" aria-hidden="true"><span class="index-line"></span><strong>CONHECIMENTO QUE MOVE.</strong></div>
@@ -59,8 +59,8 @@
       <p><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m4 13 5 5L20 6"/></svg>Clareza para o próximo passo</p>
     </div></div>
     <section class="catalog shell" id="aulas" aria-labelledby="catalog-title">
-      <div class="section-heading"><div><span class="section-kicker">Explore o catálogo</span><h2 id="catalog-title">O que você vai aprender hoje?</h2><p>Escolha por onde começar. O próximo passo é seu.</p></div><span class="catalog-count" data-count role="status" aria-live="polite" aria-atomic="true">03 conteúdos disponíveis</span></div>
-      <div class="catalog-toolbar" data-catalog-controls hidden>
+      <div class="section-heading"><div><span class="section-kicker">Produto em destaque</span><h2 id="catalog-title">Comunidade Psi Viral Pro</h2><p>O próximo passo agora está concentrado na comunidade.</p></div><span class="catalog-count" data-count role="status" aria-live="polite" aria-atomic="true">01 conteúdo disponível</span></div>
+      <div class="catalog-toolbar" hidden>
         <div class="filter-group" role="group" aria-label="Filtrar conteúdos">
           <button class="filter" type="button" data-filter="all" aria-pressed="true">Todos</button>
           <button class="filter" type="button" data-filter="free" aria-pressed="false">Gratuitos</button>
@@ -69,20 +69,20 @@
         </div>
         <label class="search-field" for="catalog-search"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 4 4"/></svg><span class="sr-only">Buscar no catálogo</span><input id="catalog-search" type="search" placeholder="O que você quer aprender?" autocomplete="off" aria-controls="catalog-cards"></label>
       </div>
-      <div class="cards" id="catalog-cards">
+      <div class="cards cards-featured" id="catalog-cards">
         <article class="catalog-card" data-card="comunidade-pro" data-category="pro" data-search="Comunidade Psi Viral Pro acompanhamento clinica posicionamento psicologia">
           <a class="card-link" href="oferta/" aria-labelledby="pro-title"><div class="poster"><span class="poster-label pro">Experiência Pro</span><img src="assets/images/comunidade-pro-640.webp" srcset="assets/images/comunidade-pro-320.webp 320w, assets/images/comunidade-pro-640.webp 640w" sizes="(max-width: 700px) clamp(120px, 38vw, 193px), (max-width: 1050px) calc(25vw - 28px), (max-width: 1336px) calc((100vw - 176px) / 6), 194px" decoding="async" width="1024" height="1536" alt="Comunidade Psi Viral Pro" loading="lazy"><span class="poster-action"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m7 4 14 8-14 8z"/></svg>Conhecer a comunidade</span></div></a>
           <div class="card-info"><span class="card-type">Comunidade · Acompanhamento</span><h3 id="pro-title">Comunidade Psi Viral Pro</h3><p>Direção e acompanhamento para construir uma clínica mais previsível.</p>
-            <button class="save-button" type="button" data-save="comunidade-pro" data-title="Comunidade Psi Viral Pro" aria-label="Salvar Comunidade Psi Viral Pro na minha lista" aria-pressed="false" hidden><svg class="plus" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg><svg class="check" viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12 4 4L19 6"/></svg></button>
+            <button class="save-button" type="button" data-title="Comunidade Psi Viral Pro" aria-label="Salvar Comunidade Psi Viral Pro na minha lista" aria-pressed="false" hidden><svg class="plus" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg><svg class="check" viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12 4 4L19 6"/></svg></button>
           </div>
         </article>
-        <article class="catalog-card" data-card="playlist-aulas" data-category="free" data-search="Playlist das 3 aulas gratuitas psicologia marketing clinica">
+        <article class="catalog-card product-disabled" data-card="playlist-aulas" data-category="free" data-search="Playlist das 3 aulas gratuitas psicologia marketing clinica" hidden aria-hidden="true">
           <a class="card-link" href="https://www.youtube.com/playlist?list=PLMc1T6mz8FnI" target="_blank" rel="noopener" aria-labelledby="playlist-title"><div class="poster"><span class="poster-label">Gratuito · 3 aulas</span><img src="assets/images/playlist-640.webp" srcset="assets/images/playlist-320.webp 320w, assets/images/playlist-640.webp 640w" sizes="(max-width: 700px) clamp(120px, 38vw, 193px), (max-width: 1050px) calc(25vw - 28px), (max-width: 1336px) calc((100vw - 176px) / 6), 194px" decoding="async" width="1024" height="1536" alt="Playlist gratuita com três aulas" loading="lazy"><span class="poster-action"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m7 4 14 8-14 8z"/></svg>Assistir no YouTube ↗</span></div></a>
           <div class="card-info"><span class="card-type">Playlist · Acesso gratuito</span><h3 id="playlist-title">Três aulas. Novas possibilidades.</h3><p>Uma sequência para sair do improviso e começar a agir com mais clareza.</p>
             <button class="save-button" type="button" data-save="playlist-aulas" data-title="Playlist das 3 aulas" aria-label="Salvar Playlist das 3 aulas na minha lista" aria-pressed="false" hidden><svg class="plus" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg><svg class="check" viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12 4 4L19 6"/></svg></button>
           </div>
         </article>
-        <article class="catalog-card" data-card="analise-perfil" data-category="free" data-search="Analise de perfil do Instagram redes sociais posicionamento gratuita">
+        <article class="catalog-card product-disabled" data-card="analise-perfil" data-category="free" data-search="Analise de perfil do Instagram redes sociais posicionamento gratuita" hidden aria-hidden="true">
           <a class="card-link" href="https://www.youtube.com/watch?v=QMFp50Lcp_4" target="_blank" rel="noopener" aria-labelledby="analise-title"><div class="poster"><span class="poster-label">Gratuito · Análise prática</span><img src="assets/images/analise-640.webp" srcset="assets/images/analise-320.webp 320w, assets/images/analise-640.webp 640w" sizes="(max-width: 700px) clamp(120px, 38vw, 193px), (max-width: 1050px) calc(25vw - 28px), (max-width: 1336px) calc((100vw - 176px) / 6), 194px" decoding="async" width="1024" height="1536" alt="Aula de análise de perfil do Instagram" loading="lazy"><span class="poster-action"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m7 4 14 8-14 8z"/></svg>Assistir no YouTube ↗</span></div></a>
           <div class="card-info"><span class="card-type">Aula · Presença digital</span><h3 id="analise-title">Seu perfil comunica o seu valor?</h3><p>Veja na prática o que observar no seu posicionamento no Instagram.</p>
             <button class="save-button" type="button" data-save="analise-perfil" data-title="Análise de perfil do Instagram" aria-label="Salvar Análise de perfil do Instagram na minha lista" aria-pressed="false" hidden><svg class="plus" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg><svg class="check" viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12 4 4L19 6"/></svg></button>
