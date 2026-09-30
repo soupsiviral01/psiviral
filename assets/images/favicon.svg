@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Psi Viral">
+  <defs>
+    <linearGradient id="bg" x1="10" y1="56" x2="54" y2="8" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0b0b0d"/>
+      <stop offset=".55" stop-color="#26111a"/>
+      <stop offset="1" stop-color="#e51937"/>
+    </linearGradient>
+    <linearGradient id="spark" x1="14" y1="49" x2="51" y2="14" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#ff8aa0"/>
+      <stop offset="1" stop-color="#fff4f6"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="15" fill="url(#bg)"/>
+  <path d="M17 42c8-1 13-6 15-16 2 10 7 15 15 16" fill="none" stroke="url(#spark)" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M32 24v25" fill="none" stroke="#fff" stroke-width="5.5" stroke-linecap="round"/>
+  <circle cx="46" cy="20" r="5" fill="#fff"/>
+  <path d="M16 19h20" fill="none" stroke="#ff4059" stroke-width="5.5" stroke-linecap="round"/>
+</svg>
